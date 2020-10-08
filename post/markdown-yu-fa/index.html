@@ -5,7 +5,7 @@
     
 <meta charset="utf-8" >
 
-<title>关于 | Zerea&#39;s Blog</title>
+<title>Markdown 语法 | Zerea&#39;s Blog</title>
 <meta name="description" content="步履不停">
 
 <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
@@ -80,19 +80,127 @@
       <div class="content-container">
         <div class="post-detail">
           
-          <h2 class="post-title">关于</h2>
+          <h2 class="post-title">Markdown 语法</h2>
           <div class="post-info post-detail-info">
-            <span><i class="icon-calendar-outline"></i> 2019-01-25</span>
+            <span><i class="icon-calendar-outline"></i> 2020-10-08</span>
             
           </div>
           <div class="post-content">
-            <blockquote>
-<p>欢迎来到我的小站呀，很高兴遇见你！🤝</p>
+            <h1 id="标题">标题</h1>
+<pre><code># 一级标题
+## 二级标题
+### 三级标题
+#### 四级标题
+##### 五级标题
+###### 六级标题
+</code></pre>
+<h1 id="字体样式">字体样式</h1>
+<h2 id="斜体">斜体</h2>
+<p><em>斜体</em></p>
+<pre><code>*斜体*
+_斜体_
+</code></pre>
+<h2 id="粗体">粗体</h2>
+<p><strong>粗体</strong></p>
+<pre><code class="language-cuti">**粗体**
+__粗体__
+</code></pre>
+<h2 id="粗斜体">粗斜体</h2>
+<p><em><strong>粗斜体</strong></em></p>
+<pre><code>***粗斜体***
+___粗斜体___
+</code></pre>
+<h2 id="高亮">高亮</h2>
+<p><code>高亮内容</code></p>
+<pre><code>`高亮内容`
+</code></pre>
+<h2 id="分隔线">分隔线</h2>
+<hr>
+<pre><code>***
+---
+___
+</code></pre>
+<h2 id="删除线"><s>删除线</s></h2>
+<pre><code>~~删除线~~
+</code></pre>
+<h2 id="下划线">下划线</h2>
+<p><u>下划线</u></p>
+<pre><code>&lt;u&gt;下划线&lt;/u&gt;
+</code></pre>
+<h2 id="脚注">脚注</h2>
+<p>脚注文本演示<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup></p>
+<pre><code>脚注文本演示[^脚注]
+[^脚注]:这是脚注内容
+</code></pre>
+<h1 id="列表">列表</h1>
+<h2 id="无序列表">无序列表</h2>
+<ul>
+<li>列表</li>
+<li>列表</li>
+<li>列表</li>
+</ul>
+<pre><code>* 列表
+- 列表
++ 列表
+</code></pre>
+<h2 id="有序列表">有序列表</h2>
+<ol>
+<li>列表一</li>
+<li>列表二</li>
+<li>列表三</li>
+</ol>
+<pre><code>1. 列表
+</code></pre>
+<h1 id="区块引用">区块/引用</h1>
+<blockquote>
+<p>区块内容</p>
+<blockquote>
+<p>区块嵌套</p>
 </blockquote>
-<h2 id="关于本站">🏠 关于本站</h2>
-<h2 id="博主是谁">👨‍💻 博主是谁</h2>
-<h2 id="兴趣爱好">⛹ 兴趣爱好</h2>
-<h2 id="联系我呀">📬 联系我呀</h2>
+</blockquote>
+<pre><code>&gt; 区块内容
+&gt;&gt; 区块嵌套
+</code></pre>
+<h1 id="表格">表格</h1>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">表头</th>
+<th>表头</th>
+<th>表头</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left"></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<pre><code>|表头|表头|表头|
+</code></pre>
+<h1 id="链接">链接</h1>
+<h2 id="普通链接">普通链接</h2>
+<p>GitHub的网址是：<a href="https://github.com/">GitHub</a></p>
+<pre><code>[GitHub](https://github.com/)
+</code></pre>
+<h2 id="引用链接">引用链接</h2>
+<p><a href="https://github.com/">GitHub</a> 是一个代码托管平台，我经常使用<a href="https://github.com/">GitHub</a>。</p>
+<pre><code>[GitHub][GitHub]
+[GitHub]:https://github.com/
+</code></pre>
+<h2 id="业内跳转">业内跳转</h2>
+<p>跳转至：<a href="#%E5%AD%97%E4%BD%93%E6%A0%B7%E5%BC%8F">字体样式</a></p>
+<pre><code>[字体样式](#字体样式)
+</code></pre>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>这是脚注内容 <a href="#fnref1" class="footnote-backref">↩︎</a></p>
+</li>
+</ol>
+</section>
 
           </div>
         </div>
